@@ -1,0 +1,12 @@
+- Two types of neural network neurons: Perceptrons and sigmoid
+- stochastic gradient descent = standard neural network learning algorithm
+
+Perceptrons (first artificial neuron explained):
+
+    -Simple mechanism explanation: perceptron takes multiple binary inputs and produces a single binary output from them
+        -outputs are determined by comparing the sum of the weighted input values to a designated threshold:
+Project one: Aaron API future price prediction:
+
+    1. Draws data from API for information on prices of oil from a previous time span/ current price information
+    2. uses data to find patteren to predict future price trends.
+    can be applicable to justin's data?
