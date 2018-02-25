@@ -1,8 +1,7 @@
 import pyforms
 from pyforms import BaseWidget
 from pyforms.controls import ControlList
-from AcquiredData import ACQData
-from Series import SeriesNum
+from AcquiredData import ACQData, SeriesNum
 
 class TableData(BaseWidget):
 

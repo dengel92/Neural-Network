@@ -1,15 +1,16 @@
 import matplotlib.pyplot as plt
-from AcquiredData import ACQData as DR
-choice_number = None
-class APIDataSepGraph(DR):
+from AcquiredData import ACQData
+
+class APIDataSepGraph(ACQData):
+
 
     def DataAcquisition_SepGraph(self):
             #  first part retrieves stored data
-            series_rawdata_yname = DR.Series_Rawdata_Yname
-            series_rawdata_sname = DR.Series_Rawdata_Sname
-            series_Yaxis_data = DR.Series_YAxis_Data
-            series_Xaxis_data = DR.Series_XAxis_Data
-            series_count = DR.Series_Count
+            series_rawdata_yname = ACQData.Series_Rawdata_Yname
+            series_rawdata_sname = ACQData.Series_Rawdata_Sname
+            series_Yaxis_data = ACQData.Series_YAxis_Data
+            series_Xaxis_data = ACQData.Series_XAxis_Data
+            series_count = ACQData.Series_Count
 
             # Sets data into iterable tuples for plots
 
@@ -44,11 +45,11 @@ class APIDataSepGraph(DR):
 class in possible works. For now the code below does nothing.
 '''
 
-class APIDataComparaGraph(DR):
+class APIDataComparaGraph(ACQData):
     def API_ComparaGraph(self):
-        series_rawdata_yname = DR.Series_Rawdata_Yname
-        series_rawdata_sname = DR.Series_Rawdata_Sname
-        series_Yaxis_data = DR.Series_YAxis_Data
-        series_Xaxis_data = DR.Series_XAxis_Data
-        series_count = DR.Series_Count
+        series_rawdata_yname = self.Series_Rawdata_Yname
+        series_rawdata_sname = self.Series_Rawdata_Sname
+        series_Yaxis_data = self.Series_YAxis_Data
+        series_Xaxis_data = self.Series_XAxis_Data
+        series_count = self.Series_Count
 

@@ -4,8 +4,7 @@ from pyforms.controls import ControlList
 from pyforms.controls import ControlButton
 from pyforms.controls import ControlCombo
 from DataDownload import DataRetrieval
-from DataTables import TableData
-from Series import SeriesNum
+from AcquiredData import SeriesNum
 
 class DataAcquisitionWin(DataRetrieval, BaseWidget, SeriesNum):
     def __init__(self):
@@ -27,7 +26,7 @@ class DataAcquisitionWin(DataRetrieval, BaseWidget, SeriesNum):
         # self._seriesIDinput.activated_event = self.check
         self._DataSeq.activated_event = self.change_value
         self._getdata.value = self.__acquire
-        self.formset = ["_seriesIDinput", "_DataSeq", ("_getdata", "_mkTable"), "_serieslist"]
+        self.formset = ["_seriesIDinput", "_DataSeq", "_getdata", "_serieslist"]
     # Troubleshoot
     # def check(self, index):
     #     print(self._seriesIDinput.value)
@@ -60,6 +59,7 @@ class DataAcquisitionWin(DataRetrieval, BaseWidget, SeriesNum):
     # retrieve and store series data in AcquiredData.py
     def __acquire(self):
         DataRetrieval.Datadownload(self)
+
 
 
 

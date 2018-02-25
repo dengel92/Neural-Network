@@ -1,6 +1,6 @@
 from DataAcquisition import DataAcquisition
 import requests as Req
-from SetAPIKey import APIKey
+from SetAPIKeyWindow import APIKey
 from AcquiredData import ACQData
 class DataRetrieval(DataAcquisition, APIKey):
     def __init__(self):

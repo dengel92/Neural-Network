@@ -1,4 +1,4 @@
-from Series import SeriesNum
+from AcquiredData import SeriesNum
 
 class DataAcquisition(SeriesNum):
     def __init__(self):
